@@ -337,6 +337,13 @@ proced_prof_qtd <-
            procedimento) |> 
   count()
 
+prof_cbo <- relacao |>
+                select(CBO, Profissional) |> 
+                distinct()
+  
+
+write.csv(relacao, "~/GitHub/materno_infantil_sisdim/00_dados/relacao_prof.csv")
+
 ```
 
 Juntando as bases para calcular os percentuais.
