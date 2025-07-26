@@ -173,6 +173,8 @@ lista_procedimentos <-
 Lista de CBO e profissionais.
 
 ```{r}
+#| eval: false
+#| include: false
 
 prof_cbo <- 
   relacao |> 
@@ -342,7 +344,7 @@ prof_cbo <- relacao |>
                 distinct()
   
 
-write.csv(relacao, "~/GitHub/materno_infantil_sisdim/00_dados/relacao_prof.csv")
+#write.csv(relacao, "~/GitHub/materno_infantil_sisdim/00_dados/relacao_prof.csv")
 
 ```
 
